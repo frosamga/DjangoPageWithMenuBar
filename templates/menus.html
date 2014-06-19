@@ -1,0 +1,13 @@
+{% load menu_tags %}
+
+<nav id="menu" >
+<ul class="menu menu-dropdown">
+{% for child in children %}
+<li class="level1{% if child.selected %} active current{% endif %}{% if child.ancestor %} ancestor{% endif %}{% if child.sibling %}{% endif %}{% if child.descendant %} descendant{% endif %}">
+	<a class="level1{% if child.select %} active current{% endif %}" href="{{ child.attr.redirect_url|default:child.get_absolute_url }}"><span>{{ child.get_menu_title }}</span></a>
+	</li>
+{% endfor %}
+
+</ul>
+</nav>
+

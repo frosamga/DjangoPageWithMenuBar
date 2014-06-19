@@ -1,0 +1,146 @@
+{% load sekizai_tags i18n cms_tags menu_tags %}
+{% load staticfiles %}
+<html>
+  <head>
+      {% render_block "css" %}
+    <link href="{% static 'css/menus.css' %}"rel="stylesheet" media="screen">
+
+  {% block js_files %}
+  {% endblock js_files %}
+
+  {% block css %}
+  {% endblock css %}
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>Gestión Laboral</title>
+	  <!link href="{{STATIC_URL}}favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	  <link rel="stylesheet" href="{{STATIC_URL}}css/widgetkit-bc5c8b44.css" type="text/css">
+	  <script src="{{STATIC_URL}}js/mootools-core.js" type="text/javascript"></script>
+	  <script src="{{STATIC_URL}}js/core.js" type="text/javascript"></script>
+	  <script src="{{STATIC_URL}}js/caption.js" type="text/javascript"></script>
+	  <script src="{{STATIC_URL}}js/jquery.js" type="text/javascript"></script>
+	  <script src="{{STATIC_URL}}js/widgetkit-b2c0dc1a.js" type="text/javascript"></script>
+	  <script type="text/javascript">
+		window.addEvent('load', function() {
+					new JCaption('img.caption');
+				});
+	  </script>
+	<link rel="apple-touch-icon-precomposed" href="{{STATIC_URL}}apple_touch_icon.png">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/base.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/layout.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/menus.css">
+	<style>.wrapper { max-width: 980px; }
+		#maininner { width: 100%; }
+		#menu .dropdown { width: 250px; }
+		#menu .columns2 { width: 500px; }
+		#menu .columns3 { width: 750px; }
+		#menu .columns4 { width: 1000px; }</style>
+	<link rel="stylesheet" href="{{STATIC_URL}}css/modules.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/tools.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/system.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/extensions.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/custom.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/animations.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/color/blue.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/background/crosshatch.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/font1/lucida.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/font2/nobileregular.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/font3/lucida.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}styles/style.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/responsive.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/print.css">
+	<link rel="stylesheet" href="{{STATIC_URL}}css/fonts/nobileregular.css">
+	<script src="{{STATIC_URL}}js/warp.js"></script>
+	<script src="{{STATIC_URL}}js/responsive.js"></script>
+	<script src="{{STATIC_URL}}js/accordionmenu.js"></script>
+	<script src="{{STATIC_URL}}js/dropdownmenu.js"></script>
+	<script src="{{STATIC_URL}}js/template.js"></script>
+  </head>
+  <body>
+      {% cms_toolbar %}
+
+<div id="page-bg">
+	<div style="min-height: 560px;">
+	<div class="wrapper grid-block">
+	<header id="header" class="grid-block">
+		<div id="toolbar" class="grid-block">
+		<div class="float-right"><div class="module   deepest">
+		<p>Contactar:
+		 <script type="text/javascript">
+		 <!--
+		 var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+		 var path = 'hr' + 'ef' + '=';
+		 var addy26657 = '&#105;nf&#111;' + '&#64;';
+		 addy26657 = addy26657 + '&#111;c&#97;g&#101;st&#105;&#111;n' + '&#46;' + 'c&#111;m';
+		 document.write('<a ' + path + '\'' + prefix + ':' + addy26657 + '\'>');
+		 document.write(addy26657);
+		 document.write('<\/a>');
+		 //-->\n </script><a href="mailto:info@ocagestion.com">info@ocagestion.com</a><script type="text/javascript">
+		 <!--
+		 document.write('<span style=\'display: none;\'>');
+		 //-->
+		 </script><span style="display: none;">This email address is being protected from spambots. You need JavaScript enabled to view it.
+		 <script type="text/javascript">
+		 <!--
+		 document.write('</');
+		 document.write('span>');
+		 //-->
+		 </script></span></p>		
+		</div></div>
+		</div>
+		<a id="logo" href="http://ocagestion.com">
+		<div class="custom-logo size-auto"></div>
+		<div id="menubar" class="grid-block">              
+ 		{% show_menu 0 100 0 100 "menus.html"%}
+		</div>
+		</a>
+		<!--
+		<div id="menubar" class="grid-block">
+						
+		<nav id="menu"><ul class="menu menu-dropdown">
+			<li class="level1 item196 active current"><a href="/" class="level1 active current"><span>Gestión Laboral</span></a></li>
+			<li class="level1 item193"><a href="/" class="level1"><span>Gestión Contable</span></a></li>
+			<li class="level1 item194"><a href="/" class="level1"><span>Gestión Fiscal</span></a></li>
+			<li class="level1 item195"><a href="/" class="level1"><span>Gestión Tecnológica</span></a></li>
+		</ul></nav>
+		</div>
+	-->													
+	</header>
+	
+	<div id="main" class="grid-block">
+	<div id="maininner" class="grid-box" style="min-height: 301px;">
+	<section id="content" class="grid-block">
+	<div id="system-message-container">
+	</div>
+	<div id="system">
+	<article class="item">
+		{% placeholder base_content %}	
+		{% block base_content %}{% endblock %}
+		{% block css_to_add %} {% endblock %}
+		{% render_block "js" %}
+	</article>
+	</div>
+	</section>
+	</div>
+	<!-- maininner end -->
+	</div>
+	<!-- main end -->
+	<footer id="footer" class="grid-block">
+		<a id="totop-scroller" href="#page"></a>
+			<div class="module   deepest">
+				<p>Av. de la Constitución, 2. Centro Comercial San Juan, local 32. Benalmádena, Málaga</p>		
+				</div>OCA Gestión
+				</div>
+		</div>
+	</div>
+	<!--<div id="lightbox-tmp"></div>
+	<div id="lightbox-loading"><div></div></div>	
+	<div id="lightbox-overlay" style="display: none;"></div>
+	<div id="lightbox-wrap"><div id="lightbox-outer">
+	<div id="lightbox-content"></div><a id="lightbox-close"></a>
+	<div id="lightbox-title"></div><a href="javascript:;" id="lightbox-left"><span id="lightbox-left-ico"></span></a><a href="javascript:;" id="lightbox-right"><span id="lightbox-right-ico"></span></a></div></div>
+        -->
+  </body>
+</html>

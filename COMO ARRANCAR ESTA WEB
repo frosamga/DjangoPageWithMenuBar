@@ -1,0 +1,12 @@
+Esta carpeta contiene la base de datos incluida de la web, la cual tiene de pass y usuario "abax" "abax".
+Para hacer funcionar esto hay que instalar el paquete entero de python y de django-cms, que lo podemos hacer de la siguiente manera
+	pip install -r pip-requirements.txt 
+Es mejor hacerlo un par de veces, ya que hay veces que no va bien a la primera.
+
+una vez instalado todo esto, el comando para arrancar la web en local es(estando en la ruta de la carpeta claro):
+	python manage.py runserver
+y se puede ver la pagina web en el explorador de internet con la direccion 127.0.0.1:8000
+
+Podemos acceder al admin para agregar paginas si agregamos a la URL la cadena /admin, la contraseña y pass estan arriba.
+
+
